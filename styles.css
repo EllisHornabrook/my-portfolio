@@ -1,0 +1,953 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arimo", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  width: 100%;
+  height: 937px;
+}
+
+.mainbox {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.insidebox {
+  height: 80%;
+  width: 80%;
+  border-radius: 6px;
+  display: flex;
+  align-content: center;
+  margin: 143px auto auto;
+  border: 2px solid #0f1010;
+  background-color: ivory;
+}
+
+.page-head {
+  position: absolute;
+  width: 650px;
+  padding: 25px 0;
+  background-color: black;
+  font-size: 46px;
+  text-decoration: underline;
+  text-align: center;
+  color: ivory;
+  top: 10%;
+  border: 3px solid ivory;
+  font-weight: bold;
+  cursor: default;
+}
+
+.head-left {
+  left: 5%;
+}
+
+.head-right {
+  right: 5%;
+}
+
+/* NAV - BAR */
+.nav {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  z-index: 6;
+  background-color: ivory;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border: 2px solid #0f1010;
+  position: fixed;
+  padding: 0 175px 0 30px;
+}
+.nav a {
+  text-decoration: none;
+  font-size: 35;
+  font-weight: bold;
+  color: #0f1010;
+  margin: auto 0;
+}
+.nav a:hover {
+  border-top: 4px solid #0f1010;
+  border-bottom: 4px solid #0f1010;
+}
+.nav .nav-circles {
+  display: flex;
+  margin: auto 0;
+  z-index: 7;
+  width: 230px;
+}
+.nav .nav-circles i {
+  margin: auto 10px;
+  font-size: 27px;
+  border-radius: 50%;
+  background-color: ivory;
+  color: #0f1010;
+}
+.nav .nav-circles i.active {
+  color: ivory;
+  background-color: #0f1010;
+  border-radius: 50%;
+  margin-top: -1px;
+  padding: 1.5px 1.5px;
+}
+
+/* PAGE 1 - HOME */
+#home-page {
+  background-color: #0f1010;
+}
+
+h1 {
+  position: absolute;
+  font-size: 101px;
+  width: auto;
+  color: ivory;
+  text-shadow: 1px 0px #eded2e, 0px 1px #eded2e, -1px 0px #eded2e, 0px -1px #eded2e;
+  cursor: default;
+  left: 8%;
+}
+
+.ellis1 {
+  bottom: 25%;
+  z-index: 5;
+}
+
+.ellis2 {
+  bottom: 33%;
+  opacity: 0.6;
+  color: #0f1010;
+  text-shadow: 0px -1px 2.5px #eded2e;
+  z-index: 4;
+}
+
+.ellis3 {
+  bottom: 41%;
+  opacity: 0.4;
+  color: #0f1010;
+  text-shadow: 0px -2px 2.5px #eded2e;
+  z-index: 3;
+}
+
+.ellis4 {
+  bottom: 49%;
+  opacity: 0.2;
+  color: #0f1010;
+  text-shadow: 0px -3px 2.5px #eded2e;
+  z-index: 2;
+}
+
+.ellis5 {
+  bottom: 57%;
+  opacity: 0.1;
+  color: #0f1010;
+  text-shadow: 0px -4px 2.5px #eded2e;
+  z-index: 1;
+}
+
+h2 {
+  position: absolute;
+  bottom: 14%;
+  left: 8%;
+  font-size: 88px;
+  width: auto;
+  color: #0f1010;
+  text-decoration: overline;
+  text-decoration-color: #eded2e;
+  text-shadow: 1px 0px #eded2e, 0px 1px #eded2e, -1px 0px #eded2e, 0px -1px #eded2e;
+  cursor: default;
+}
+
+/* PAGE 2 - PROJECTS */
+#project-page {
+  background-color: #0f1010;
+  border-top: 3px solid #eded2e;
+}
+
+h3 {
+  text-align: center;
+  font-size: 55;
+  padding-top: 75px;
+  color: #0f1010;
+  text-shadow: 1px 0px #eded2e, 0px 1px #eded2e, -1px 0px #eded2e, 0px -1px #eded2e;
+  cursor: default;
+}
+
+.pro-grid {
+  width: 80%;
+  margin: 15px auto 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 80%;
+}
+.pro-grid a {
+  position: relative;
+  margin: auto;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.1), 2px 0px 10px rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  text-decoration: none;
+}
+.pro-grid a p {
+  height: 70%;
+  width: 70%;
+  background-color: ivory;
+  margin: auto auto;
+  border-radius: 2px;
+  opacity: 0.8;
+  color: #0f1010;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.pro-grid .box1 {
+  width: 325px;
+  height: 325px;
+}
+.pro-grid .box2 {
+  width: 375px;
+  height: 375px;
+}
+
+/* PAGE 3 - ABOUT */
+#about-page {
+  background-color: #def3fd;
+}
+
+.about-css {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 25px 0;
+}
+.about-css p {
+  font-size: 22px;
+  width: 75%;
+  color: black;
+  border-top: 2px solid #0f1010;
+  border-bottom: 2px solid #0f1010;
+}
+
+.businpic {
+  border: 2px solid #0f1010;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+}
+
+/* PAGE 4 - SKILLS */
+#skills-page {
+  background-color: #FFDAC1;
+}
+
+.ski-grid {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 90%;
+}
+.ski-grid div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+}
+.ski-grid div i {
+  font-size: 66px;
+}
+.ski-grid div p {
+  font-size: 24px;
+  text-decoration: overline;
+  cursor: default;
+}
+.ski-grid div:hover {
+  border: 1px solid #0f1010;
+  border-radius: 25px;
+  background-color: #FFFFE0;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.4), inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 3px rgba(255, 255, 255, 0.5);
+}
+.ski-grid div:hover i {
+  font-size: 84px;
+  transition: 0.3s;
+}
+.ski-grid div:hover p {
+  font-size: 27px;
+  transition: 0.3s;
+}
+
+/* PAGE 5 - CONTACT */
+#contact-page {
+  background-color: #DEFDE0;
+}
+
+.contact-css {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.contact-css div {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  position: relative;
+  right: 15%;
+  width: 550px;
+  padding: 10px 20px;
+  border: 3px solid #0f1010;
+}
+.contact-css div i {
+  font-size: 66px;
+  display: inline;
+}
+.contact-css div p, .contact-css div a {
+  font-size: 34px;
+  display: inline;
+  margin: auto;
+}
+.contact-css div a:visited {
+  color: black;
+}
+.contact-css .right {
+  position: relative;
+  left: 15%;
+  float: right;
+}
+
+footer {
+  display: flex;
+  bottom: 0;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0f1010;
+  height: 60px;
+  padding: 0 2%;
+  border-top: 4px solid white;
+}
+footer p {
+  color: grey;
+  font-size: 13px;
+}
+footer .top-link {
+  font-size: 32px;
+  color: grey;
+  cursor: pointer;
+  background: none;
+}
+footer .top-link:hover {
+  color: white;
+  box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.4);
+}
+
+/* PAGE - DIVIDERS */
+.divider-pic {
+  width: 100%;
+}
+
+.about-divider {
+  width: 100%;
+  height: 90px;
+  background-color: #def3fd;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 2%);
+  margin-top: -2px;
+}
+
+.skills-divider-one {
+  width: 100%;
+  height: 90px;
+  background-color: #FFDAC1;
+  clip-path: polygon(0% 0%, 100% 98%, 100% 100%, 0% 100%);
+  margin-bottom: -2px;
+}
+
+.skills-divider-two {
+  width: 100%;
+  height: 90px;
+  background-color: #FFDAC1;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 2%, 0% 100%);
+  margin-top: -2px;
+}
+
+.contact-divider {
+  width: 100%;
+  height: 90px;
+  background-color: #DEFDE0;
+  clip-path: polygon(0% 98%, 100% 0%, 100% 100%, 0% 100%);
+  margin-bottom: -2px;
+}
+
+@media only screen and (max-width: 1675px) {
+  .page-head {
+    width: 550px;
+    font-size: 41px;
+  }
+
+  .about-css p {
+    font-size: 21px;
+  }
+}
+@media only screen and (max-width: 1505px) {
+  .nav {
+    padding: 0 150px 0 30px;
+  }
+
+  h1 {
+    font-size: 90px;
+  }
+
+  h2 {
+    font-size: 78px;
+  }
+
+  .ellis1 {
+    bottom: 24%;
+  }
+
+  .ellis2 {
+    bottom: 31%;
+  }
+
+  .ellis3 {
+    bottom: 38%;
+  }
+
+  .ellis4 {
+    bottom: 45%;
+  }
+
+  .ellis5 {
+    bottom: 52%;
+  }
+
+  .page-head {
+    width: 475px;
+    font-size: 36px;
+  }
+
+  .about-css p {
+    font-size: 20px;
+  }
+
+  .businpic {
+    height: 200px;
+    width: 200px;
+  }
+
+  .contact-css div {
+    width: 450px;
+    padding: 5px 10px;
+  }
+  .contact-css div i {
+    font-size: 60px;
+  }
+  .contact-css div p, .contact-css div a {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 1430px) {
+  .nav {
+    padding: 0 100px 0 30px;
+  }
+
+  .pro-grid .box1 {
+    width: 275px;
+    height: 275px;
+  }
+  .pro-grid .box2 {
+    width: 325px;
+    height: 325px;
+  }
+  .pro-grid a p {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 1330px) {
+  .page-head {
+    width: 450px;
+    font-size: 32px;
+    padding: 20px 0;
+  }
+
+  .contact-css div {
+    width: 425px;
+    padding: 5px 10px;
+  }
+  .contact-css div i {
+    font-size: 50px;
+  }
+  .contact-css div p, .contact-css div a {
+    font-size: 26px;
+  }
+
+  .ski-grid div {
+    width: 140px;
+    height: 140px;
+  }
+  .ski-grid div i {
+    font-size: 60px;
+  }
+  .ski-grid div p {
+    font-size: 20px;
+  }
+  .ski-grid div:hover i {
+    font-size: 76px;
+  }
+  .ski-grid div:hover p {
+    font-size: 23px;
+  }
+}
+@media only screen and (max-width: 1245px) {
+  .nav a {
+    font-size: 32;
+  }
+
+  h1 {
+    font-size: 80px;
+  }
+
+  h2 {
+    font-size: 68px;
+  }
+
+  .ellis1 {
+    bottom: 22%;
+  }
+
+  .ellis2 {
+    bottom: 28.5%;
+  }
+
+  .ellis3 {
+    bottom: 34.5%;
+  }
+
+  .ellis4 {
+    bottom: 40.5%;
+  }
+
+  .ellis5 {
+    bottom: 46.5%;
+  }
+
+  .pro-grid .box1 {
+    width: 250px;
+    height: 250px;
+  }
+  .pro-grid .box2 {
+    width: 300px;
+    height: 300px;
+  }
+  .pro-grid a p {
+    font-size: 14px;
+  }
+
+  .about-css p {
+    font-size: 19px;
+  }
+}
+@media only screen and (max-width: 1140px) {
+  .page-head {
+    width: 400px;
+    font-size: 30px;
+  }
+
+  h1 {
+    font-size: 70px;
+  }
+
+  h2 {
+    font-size: 58px;
+  }
+
+  .ellis1 {
+    bottom: 21%;
+  }
+
+  .ellis2 {
+    bottom: 26.5%;
+  }
+
+  .ellis3 {
+    bottom: 32%;
+  }
+
+  .ellis4 {
+    bottom: 37.5%;
+  }
+
+  .ellis5 {
+    bottom: 43%;
+  }
+
+  .pro-grid .box1 {
+    width: 225px;
+    height: 225px;
+  }
+  .pro-grid .box2 {
+    width: 275px;
+    height: 275px;
+  }
+  .pro-grid a p {
+    font-size: 13px;
+  }
+
+  .about-css p {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 1055px) {
+  .nav {
+    height: 65px;
+    padding: 0 50px 0 30px;
+  }
+  .nav a {
+    font-size: 28;
+  }
+  .nav .nav-circles {
+    width: 200px;
+  }
+  .nav .nav-circles i {
+    font-size: 24px;
+  }
+
+  .page-head {
+    width: 350px;
+    padding: 15px 0;
+    top: 12%;
+    font-size: 28px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 48px;
+  }
+
+  .ellis1 {
+    bottom: 20%;
+  }
+
+  .ellis2 {
+    bottom: 24.5%;
+  }
+
+  .ellis3 {
+    bottom: 29%;
+  }
+
+  .ellis4 {
+    bottom: 33.5%;
+  }
+
+  .ellis5 {
+    bottom: 38%;
+  }
+
+  h3 {
+    font-size: 48px;
+  }
+
+  .pro-grid .box1 {
+    width: 225px;
+    height: 225px;
+  }
+  .pro-grid .box2 {
+    width: 250px;
+    height: 250px;
+  }
+  .pro-grid a p {
+    font-size: 12px;
+  }
+
+  .about-css p {
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width: 955px) {
+  .nav {
+    height: 60px;
+    padding: 0 60px 0 30px;
+  }
+  .nav a {
+    font-size: 28;
+  }
+  .nav .nav-circles {
+    width: 200px;
+  }
+  .nav .nav-circles i {
+    font-size: 24px;
+  }
+  .nav .nav-circles i.active {
+    margin-top: -1.1px;
+  }
+
+  .pro-grid {
+    width: 90%;
+    margin: 15px auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 85%;
+  }
+  .pro-grid .box1 {
+    width: 250px;
+    height: 250px;
+  }
+  .pro-grid .box2 {
+    width: 250px;
+    height: 250px;
+  }
+  .pro-grid a p {
+    font-size: 11px;
+  }
+
+  footer {
+    height: 50px;
+  }
+  footer p {
+    font-size: 11px;
+  }
+  footer .top-link {
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 840px) {
+  .ellis2, .ellis3, .ellis4, .ellis5 {
+    display: none;
+  }
+
+  .nav {
+    height: 55px;
+    padding: 0 70px;
+  }
+  .nav a {
+    font-size: 26;
+  }
+  .nav .nav-circles {
+    display: none;
+  }
+
+  .page-head {
+    width: 300px;
+    padding: 10px 0;
+    top: 13%;
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 40;
+  }
+
+  .businpic {
+    height: 150px;
+    width: 150px;
+  }
+
+  .about-css p {
+    font-size: 17px;
+  }
+
+  .ski-grid div {
+    width: 115px;
+    height: 115px;
+  }
+  .ski-grid div i {
+    font-size: 50px;
+  }
+  .ski-grid div p {
+    font-size: 18px;
+  }
+  .ski-grid div:hover i {
+    font-size: 65px;
+  }
+  .ski-grid div:hover p {
+    font-size: 20px;
+  }
+
+  .about-divider, .skills-divider-one, .skills-divider-two, .contact-divider {
+    height: 60px;
+  }
+
+  footer {
+    height: 40px;
+  }
+  footer p {
+    font-size: 11px;
+  }
+  footer .top-link {
+    font-size: 24px;
+  }
+
+  .pro-grid .box1 {
+    width: 225px;
+    height: 225px;
+  }
+  .pro-grid .box2 {
+    width: 225px;
+    height: 225px;
+  }
+  .pro-grid a p {
+    font-size: 10px;
+  }
+
+  .contact-css div {
+    width: 400px;
+    right: 0%;
+  }
+  .contact-css div p, .contact-css div a {
+    font-size: 24px;
+  }
+  .contact-css .right {
+    left: 0%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .nav {
+    height: 50px;
+  }
+  .nav a {
+    font-size: 24;
+  }
+
+  .ellis1 {
+    bottom: 25%;
+  }
+
+  .page-head {
+    width: 270px;
+    padding: 8px 0;
+    top: 13%;
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 42;
+  }
+
+  .businpic {
+    height: 125px;
+    width: 125px;
+  }
+
+  .about-css p {
+    font-size: 16px;
+  }
+
+  .ski-grid div {
+    width: 110px;
+    height: 110px;
+  }
+  .ski-grid div i {
+    font-size: 48px;
+  }
+  .ski-grid div p {
+    font-size: 16px;
+  }
+  .ski-grid div:hover i {
+    font-size: 63px;
+  }
+  .ski-grid div:hover p {
+    font-size: 18px;
+  }
+
+  .about-divider, .skills-divider-one, .skills-divider-two, .contact-divider {
+    height: 40px;
+  }
+
+  footer {
+    height: 35px;
+  }
+  footer p {
+    font-size: 10px;
+  }
+  footer .top-link {
+    font-size: 22px;
+  }
+
+  .pro-grid .box1 {
+    width: 215px;
+    height: 215px;
+  }
+  .pro-grid .box2 {
+    width: 215px;
+    height: 215px;
+  }
+  .pro-grid a p {
+    font-size: 9px;
+  }
+
+  .contact-css div {
+    width: 375px;
+  }
+  .contact-css div p, .contact-css div a {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 625px) {
+  .nav {
+    padding: 0 40px;
+  }
+
+  .about-css p {
+    font-size: 15px;
+  }
+
+  .contact-css div {
+    width: 325px;
+  }
+  .contact-css div p, .contact-css div a {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 543px) {
+  .nav a {
+    font-size: 20;
+  }
+
+  .pro-grid .box1 {
+    width: 175px;
+    height: 175px;
+  }
+  .pro-grid .box2 {
+    width: 175px;
+    height: 175px;
+  }
+
+  .about-css p {
+    font-size: 14px;
+  }
+
+  .contact-css div {
+    width: 275px;
+  }
+  .contact-css div p, .contact-css div a {
+    font-size: 16px;
+  }
+}
