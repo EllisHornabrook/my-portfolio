@@ -5,11 +5,11 @@ var projectCircle = document.getElementById('project-circle');
 var aboutCircle = document.getElementById('about-circle');
 var skillsCircle = document.getElementById('skills-circle');
 var contactCircle = document.getElementById('contact-circle');
-var homePage = document.getElementById('home-page');
-var projectPage = document.getElementById('project-page');
-var aboutPage = document.getElementById('about-page');
-var skillsPage = document.getElementById('skills-page');
-var contactPage = document.getElementById('contact-page');
+var homePage = document.getElementById('home');
+var projectPage = document.getElementById('projects');
+var aboutPage = document.getElementById('about');
+var skillsPage = document.getElementById('skills');
+var contactPage = document.getElementById('contact');
 var navCircles = document.querySelectorAll(".fa-dot-circle");
 homeCircle.classList.add("active");
 document.addEventListener('scroll', function () {

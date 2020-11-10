@@ -4,11 +4,11 @@ const aboutCircle = document.getElementById('about-circle')
 const skillsCircle = document.getElementById('skills-circle')
 const contactCircle = document.getElementById('contact-circle')
 
-const homePage = document.getElementById('home-page')
-const projectPage = document.getElementById('project-page')
-const aboutPage = document.getElementById('about-page')
-const skillsPage = document.getElementById('skills-page')
-const contactPage = document.getElementById('contact-page')
+const homePage = document.getElementById('home')
+const projectPage = document.getElementById('projects')
+const aboutPage = document.getElementById('about')
+const skillsPage = document.getElementById('skills')
+const contactPage = document.getElementById('contact')
 
 const navCircles = document.querySelectorAll(".fa-dot-circle")
 

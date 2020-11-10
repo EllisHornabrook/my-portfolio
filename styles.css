@@ -105,7 +105,7 @@ section {
 }
 
 /* PAGE 1 - HOME */
-#home-page {
+#home {
   background-color: #0f1010;
 }
 
@@ -170,7 +170,7 @@ h2 {
 }
 
 /* PAGE 2 - PROJECTS */
-#project-page {
+#projects {
   background-color: #0f1010;
   border-top: 3px solid #eded2e;
 }
@@ -192,7 +192,7 @@ h3 {
   grid-template-rows: 1fr 1fr;
   height: 80%;
 }
-.pro-grid a {
+.pro-grid div {
   position: relative;
   margin: auto;
   background-color: black;
@@ -202,13 +202,13 @@ h3 {
   border-radius: 5px;
   text-decoration: none;
 }
-.pro-grid a p {
+.pro-grid div section {
   height: 70%;
   width: 70%;
   background-color: ivory;
   margin: auto auto;
   border-radius: 2px;
-  opacity: 0.8;
+  border: 3px solid black;
   color: #0f1010;
   text-align: center;
   justify-content: center;
@@ -216,7 +216,18 @@ h3 {
   flex-direction: column;
   font-size: 16px;
   font-weight: bold;
-  cursor: pointer;
+}
+.pro-grid div section h4 {
+  font-size: 22px;
+  padding: 2px;
+  text-decoration: underline;
+}
+.pro-grid div section i {
+  font-size: 28px;
+  color: #eded2e;
+  background-color: black;
+  padding: 5px;
+  border-radius: 5px;
 }
 .pro-grid .box1 {
   width: 325px;
@@ -226,9 +237,19 @@ h3 {
   width: 375px;
   height: 375px;
 }
+.pro-grid #gungame {
+  background-image: url(./images/gungame.png);
+  background-size: 200% 100%;
+  background-position: center;
+}
+.pro-grid #morsecode {
+  background-image: url(./images/morsecode.png);
+  background-size: 200% 100%;
+  background-position: center;
+}
 
 /* PAGE 3 - ABOUT */
-#about-page {
+#about {
   background-color: #def3fd;
 }
 
@@ -255,7 +276,7 @@ h3 {
 }
 
 /* PAGE 4 - SKILLS */
-#skills-page {
+#skills {
   background-color: #FFDAC1;
 }
 
@@ -300,7 +321,7 @@ h3 {
 }
 
 /* PAGE 5 - CONTACT */
-#contact-page {
+#contact {
   background-color: #DEFDE0;
 }
 
@@ -474,6 +495,12 @@ footer .top-link:hover {
     padding: 0 100px 0 30px;
   }
 
+  .pro-grid div section h4 {
+    font-size: 14px;
+  }
+  .pro-grid div section p {
+    font-size: 12px;
+  }
   .pro-grid .box1 {
     width: 275px;
     height: 275px;
@@ -604,6 +631,12 @@ footer .top-link:hover {
     bottom: 43%;
   }
 
+  .pro-grid div section h4 {
+    font-size: 12px;
+  }
+  .pro-grid div section p {
+    font-size: 10px;
+  }
   .pro-grid .box1 {
     width: 225px;
     height: 225px;
@@ -715,6 +748,15 @@ footer .top-link:hover {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     height: 85%;
+  }
+  .pro-grid div section p {
+    display: none;
+  }
+  .pro-grid div section h4 {
+    font-size: 24px;
+  }
+  .pro-grid div section i {
+    font-size: 32px;
   }
   .pro-grid .box1 {
     width: 250px;
@@ -927,27 +969,78 @@ footer .top-link:hover {
   }
 }
 @media only screen and (max-width: 543px) {
+  .nav {
+    padding: 0 20px;
+  }
   .nav a {
-    font-size: 20;
+    font-size: 17px;
+    margin-top: 8px;
   }
 
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 34px;
+    bottom: 16%;
+  }
+
+  .pro-grid {
+    height: 75%;
+  }
+  .pro-grid div section h4 {
+    font-size: 16px;
+  }
+  .pro-grid div section i {
+    font-size: 20px;
+  }
   .pro-grid .box1 {
-    width: 175px;
-    height: 175px;
+    width: 150px;
+    height: 150px;
   }
   .pro-grid .box2 {
-    width: 175px;
-    height: 175px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .ski-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  .ski-grid div {
+    height: 100px;
+    width: 100px;
+  }
+  .ski-grid div i {
+    font-size: 46;
+  }
+  .ski-grid div p {
+    font-size: 17px;
+  }
+  .ski-grid div:hover i {
+    font-size: 56;
+  }
+  .ski-grid div:hover p {
+    font-size: 19px;
   }
 
   .about-css p {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .contact-css div {
-    width: 275px;
+    width: 235px;
+  }
+  .contact-css div i {
+    font-size: 16px;
   }
   .contact-css div p, .contact-css div a {
     font-size: 16px;
+  }
+}
+@media only screen and (max-height: 830px) {
+  h1 {
+    margin-bottom: 20px;
   }
 }
