@@ -250,24 +250,30 @@ h3 {
     }
     #rickandmorty {
         background-image: url(./images/rickandmorty.png);
-        background-size: 200% 100%;
+        background-size: 40% 20%;
         background-position: center;
+        background-repeat: repeat;
     }
-    // #no1se {
-
-    // }
+    #no1se {
+        background-image: url(./images/no1se.png);
+        background-size: 40% 20%;
+        background-position: center;
+        background-repeat: repeat;
+    }
     // #footballteam {
 
     // }
     #gungame {
         background-image: url(./images/gungame.png);
-        background-size: 200% 100%;
+        background-size: 40% 20%;
         background-position: center;
+        background-repeat: repeat;
     }
     #morsecode {
         background-image: url(./images/morsecode.png);
-        background-size: 200% 100%;
+        background-size: 40% 20%;
         background-position: center;
+        background-repeat: repeat;
     }
     // #raptrumps {
 
