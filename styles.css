@@ -237,6 +237,11 @@ h3 {
   width: 375px;
   height: 375px;
 }
+.pro-grid #rickandmorty {
+  background-image: url(./images/rickandmorty.png);
+  background-size: 200% 100%;
+  background-position: center;
+}
 .pro-grid #gungame {
   background-image: url(./images/gungame.png);
   background-size: 200% 100%;
@@ -336,7 +341,7 @@ h3 {
   align-content: center;
   align-items: center;
   position: relative;
-  right: 15%;
+  margin-right: 30%;
   width: 550px;
   padding: 10px 20px;
   border: 3px solid #0f1010;
@@ -355,8 +360,7 @@ h3 {
 }
 .contact-css .right {
   position: relative;
-  left: 15%;
-  float: right;
+  margin-left: 60%;
 }
 
 footer {
@@ -379,10 +383,10 @@ footer .top-link {
   color: grey;
   cursor: pointer;
   background: none;
+  height: auto;
 }
 footer .top-link:hover {
   color: white;
-  box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.4);
 }
 
 /* PAGE - DIVIDERS */
@@ -861,13 +865,13 @@ footer .top-link:hover {
 
   .contact-css div {
     width: 400px;
-    right: 0%;
+    margin-right: 0;
   }
   .contact-css div p, .contact-css div a {
     font-size: 24px;
   }
   .contact-css .right {
-    left: 0%;
+    margin-left: 0;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -1031,9 +1035,10 @@ footer .top-link:hover {
 
   .contact-css div {
     width: 235px;
+    height: 60px;
   }
   .contact-css div i {
-    font-size: 16px;
+    font-size: 18px;
   }
   .contact-css div p, .contact-css div a {
     font-size: 16px;
