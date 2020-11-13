@@ -192,7 +192,7 @@ h3 {
   grid-template-rows: 1fr 1fr;
   height: 80%;
 }
-.pro-grid div {
+.pro-grid article {
   position: relative;
   margin: auto;
   background-color: black;
@@ -202,13 +202,13 @@ h3 {
   border-radius: 5px;
   text-decoration: none;
 }
-.pro-grid div section {
+.pro-grid article section {
   height: 70%;
   width: 70%;
   background-color: ivory;
   margin: auto auto;
-  border-radius: 2px;
-  border: 3px solid black;
+  border-radius: 5px;
+  border: 2px solid black;
   color: #0f1010;
   text-align: center;
   justify-content: center;
@@ -217,17 +217,41 @@ h3 {
   font-size: 16px;
   font-weight: bold;
 }
-.pro-grid div section h4 {
-  font-size: 22px;
-  padding: 2px;
-  text-decoration: underline;
+.pro-grid article section div {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.pro-grid div section i {
+.pro-grid article section div h4 {
   font-size: 28px;
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+.pro-grid article section span {
+  height: 20%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: solid black 2px;
+}
+.pro-grid article section span a {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-left: solid black 1px;
+  border-right: solid black 1px;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+.pro-grid article section span a i {
+  font-size: 34px;
+  color: black;
+  font-weight: bolder;
+}
+.pro-grid article section span a i:hover {
   color: #eded2e;
-  background-color: black;
-  padding: 5px;
-  border-radius: 5px;
+  text-shadow: 2px 1px 1px black;
 }
 .pro-grid .box1 {
   width: 325px;
@@ -237,27 +261,30 @@ h3 {
   width: 375px;
   height: 375px;
 }
+.pro-grid .single-link {
+  grid-template-columns: 1fr;
+}
 .pro-grid #rickandmorty {
   background-image: url(./images/rickandmorty.png);
-  background-size: 40% 20%;
+  background-size: 200% 100%;
   background-position: center;
   background-repeat: repeat;
 }
 .pro-grid #no1se {
   background-image: url(./images/no1se.png);
-  background-size: 40% 20%;
+  background-size: 200% 100%;
   background-position: center;
   background-repeat: repeat;
 }
 .pro-grid #gungame {
   background-image: url(./images/gungame.png);
-  background-size: 40% 20%;
+  background-size: 200% 100%;
   background-position: center;
   background-repeat: repeat;
 }
 .pro-grid #morsecode {
   background-image: url(./images/morsecode.png);
-  background-size: 40% 20%;
+  background-size: 200% 100%;
   background-position: center;
   background-repeat: repeat;
 }
@@ -508,10 +535,10 @@ footer .top-link:hover {
     padding: 0 100px 0 30px;
   }
 
-  .pro-grid div section h4 {
+  .pro-grid article section div h4 {
     font-size: 14px;
   }
-  .pro-grid div section p {
+  .pro-grid article section div p {
     font-size: 12px;
   }
   .pro-grid .box1 {
@@ -644,11 +671,14 @@ footer .top-link:hover {
     bottom: 43%;
   }
 
-  .pro-grid div section h4 {
+  .pro-grid article section div h4 {
     font-size: 12px;
   }
-  .pro-grid div section p {
+  .pro-grid article section div p {
     font-size: 10px;
+  }
+  .pro-grid article section span a i {
+    font-size: 26;
   }
   .pro-grid .box1 {
     width: 225px;
@@ -762,14 +792,14 @@ footer .top-link:hover {
     grid-template-rows: 1fr 1fr 1fr;
     height: 85%;
   }
-  .pro-grid div section p {
+  .pro-grid article section div p {
     display: none;
   }
-  .pro-grid div section h4 {
+  .pro-grid article section div h4 {
     font-size: 24px;
   }
-  .pro-grid div section i {
-    font-size: 32px;
+  .pro-grid article section span a i {
+    font-size: 24px;
   }
   .pro-grid .box1 {
     width: 250px;
@@ -1002,11 +1032,11 @@ footer .top-link:hover {
   .pro-grid {
     height: 75%;
   }
-  .pro-grid div section h4 {
+  .pro-grid article section div h4 {
     font-size: 16px;
   }
-  .pro-grid div section i {
-    font-size: 20px;
+  .pro-grid article section span a i {
+    font-size: 14px;
   }
   .pro-grid .box1 {
     width: 150px;
