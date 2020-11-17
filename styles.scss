@@ -279,40 +279,30 @@ h3 {
         height: 375px;
     }
 
-    .single-link {
-        grid-template-columns: 1fr;
+    #rickandmorty, #no1se, #footballteam, #gungame, #morsecode {
+        background-size: 200% 100%;
+        background-position: center;
+        background-repeat: repeat;
     }
 
     #rickandmorty {
         background-image: url(./images/rickandmorty.png);
-        background-size: 200% 100%;
-        background-position: center;
-        background-repeat: repeat;
     }
 
     #no1se {
         background-image: url(./images/no1se.png);
-        background-size: 200% 100%;
-        background-position: center;
-        background-repeat: repeat;
     }
 
-    // #footballteam {
-
-    // }
+    #footballteam {
+        background-image: url(./images/footballteams.png);
+    }
 
     #gungame {
         background-image: url(./images/gungame.png);
-        background-size: 200% 100%;
-        background-position: center;
-        background-repeat: repeat;
     }
 
     #morsecode {
         background-image: url(./images/morsecode.png);
-        background-size: 200% 100%;
-        background-position: center;
-        background-repeat: repeat;
     }
 
     // #raptrumps {
