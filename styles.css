@@ -228,6 +228,9 @@ h3 {
   text-decoration: underline;
   margin-bottom: 5px;
 }
+.pro-grid article section div p {
+  padding: 0 5px;
+}
 .pro-grid article section span {
   height: 20%;
   display: grid;
@@ -529,10 +532,13 @@ footer .top-link:hover {
   }
 
   .pro-grid article section div h4 {
-    font-size: 14px;
+    font-size: 18px;
   }
   .pro-grid article section div p {
-    font-size: 12px;
+    font-size: 14px;
+  }
+  .pro-grid article section span a i {
+    font-size: 30px;
   }
   .pro-grid .box1 {
     width: 275px;
@@ -541,9 +547,6 @@ footer .top-link:hover {
   .pro-grid .box2 {
     width: 325px;
     height: 325px;
-  }
-  .pro-grid a p {
-    font-size: 15px;
   }
 }
 @media only screen and (max-width: 1330px) {
@@ -622,9 +625,6 @@ footer .top-link:hover {
     width: 300px;
     height: 300px;
   }
-  .pro-grid a p {
-    font-size: 14px;
-  }
 
   .about-css p {
     font-size: 19px;
@@ -665,13 +665,13 @@ footer .top-link:hover {
   }
 
   .pro-grid article section div h4 {
-    font-size: 12px;
+    font-size: 15px;
   }
   .pro-grid article section div p {
-    font-size: 10px;
+    font-size: 11px;
   }
   .pro-grid article section span a i {
-    font-size: 26;
+    font-size: 24px;
   }
   .pro-grid .box1 {
     width: 225px;
@@ -680,9 +680,6 @@ footer .top-link:hover {
   .pro-grid .box2 {
     width: 275px;
     height: 275px;
-  }
-  .pro-grid a p {
-    font-size: 13px;
   }
 
   .about-css p {
@@ -751,9 +748,6 @@ footer .top-link:hover {
     width: 250px;
     height: 250px;
   }
-  .pro-grid a p {
-    font-size: 12px;
-  }
 
   .about-css p {
     font-size: 17px;
@@ -790,6 +784,7 @@ footer .top-link:hover {
   }
   .pro-grid article section div h4 {
     font-size: 24px;
+    margin-bottom: 0;
   }
   .pro-grid article section span a i {
     font-size: 24px;
@@ -801,9 +796,6 @@ footer .top-link:hover {
   .pro-grid .box2 {
     width: 250px;
     height: 250px;
-  }
-  .pro-grid a p {
-    font-size: 11px;
   }
 
   footer {
@@ -891,9 +883,6 @@ footer .top-link:hover {
     width: 225px;
     height: 225px;
   }
-  .pro-grid a p {
-    font-size: 10px;
-  }
 
   .contact-css div {
     width: 400px;
@@ -976,9 +965,6 @@ footer .top-link:hover {
   .pro-grid .box2 {
     width: 215px;
     height: 215px;
-  }
-  .pro-grid a p {
-    font-size: 9px;
   }
 
   .contact-css div {
