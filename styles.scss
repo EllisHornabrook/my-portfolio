@@ -283,7 +283,7 @@ h3 {
         height: 375px;
     }
 
-    #rickandmorty, #no1se, #footballteam, #gungame, #morsecode {
+    #rickandmorty, #no1se, #footballteam, #gungame, #morsecode, #raptrumps {
         background-size: 200% 100%;
         background-position: center;
         background-repeat: repeat;
@@ -309,9 +309,9 @@ h3 {
         background-image: url(./images/morsecode.png);
     }
 
-    // #raptrumps {
-
-    // }
+    #raptrumps {
+        background-image: url(./images/raptrumps.png);
+    }
 }
 
 

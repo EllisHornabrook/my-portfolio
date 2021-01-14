@@ -229,7 +229,7 @@ h3 {
   margin-bottom: 5px;
 }
 .pro-grid article section div p {
-  padding: 0 5px;
+  padding: 0 10px;
 }
 .pro-grid article section span {
   height: 20%;
@@ -264,7 +264,7 @@ h3 {
   width: 375px;
   height: 375px;
 }
-.pro-grid #rickandmorty, .pro-grid #no1se, .pro-grid #footballteam, .pro-grid #gungame, .pro-grid #morsecode {
+.pro-grid #rickandmorty, .pro-grid #no1se, .pro-grid #footballteam, .pro-grid #gungame, .pro-grid #morsecode, .pro-grid #raptrumps {
   background-size: 200% 100%;
   background-position: center;
   background-repeat: repeat;
@@ -283,6 +283,9 @@ h3 {
 }
 .pro-grid #morsecode {
   background-image: url(./images/morsecode.png);
+}
+.pro-grid #raptrumps {
+  background-image: url(./images/raptrumps.png);
 }
 
 /* PAGE 3 - ABOUT */
