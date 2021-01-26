@@ -286,6 +286,7 @@ h3 {
 }
 .pro-grid #raptrumps {
   background-image: url(./images/raptrumps.png);
+  background-size: 130% 100%;
 }
 
 /* PAGE 3 - ABOUT */
